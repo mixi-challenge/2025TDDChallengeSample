@@ -1,9 +1,6 @@
 FROM ruby:3.2.2
 ENV LANG C.UTF-8
 
-RUN set -ex
-RUN apt-get update -qq
-
 RUN mkdir -p /src/tdd_challenge
 WORKDIR /src/tdd_challenge
 
