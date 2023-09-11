@@ -9,5 +9,3 @@ USER ruby
 
 RUN gem install bundler -v 2.4.19 && \
   bundle config set path '/usr/local/bundle/vendor/gems'
-
-ENV EDITOR vim
