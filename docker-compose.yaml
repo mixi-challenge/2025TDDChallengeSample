@@ -1,0 +1,17 @@
+version: '3'
+services:
+  tdd:
+    build: .
+    user: ruby
+    tty: true
+    stdin_open: true
+    volumes:
+      - type: bind
+        source: .
+        target: /src/tdd_challenge
+      - bundle:/usr/local/bundle
+      - /src/.git
+
+volumes:
+  bundle:
+    driver: local
